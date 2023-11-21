@@ -1,5 +1,4 @@
-pip==version 23.3.1
-python==23.3.1
+--upgrade pip
 Flask
 gunicorn
 requests
