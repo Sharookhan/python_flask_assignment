@@ -16,9 +16,9 @@ def index():
 def movieDetails():
     baseUrl_251 = "http://www.omdbapi.com/"
     movieName_251 = request.form['movieName']
-    apiKey_251 = os.getenv('apikey_251')
+    apiKey = os.getenv('apiKey')
 
-    params_251 = {'apikey_251': apiKey_251, 't_251': movieName_251}
+    params_251 = {'apiKey': apiKey, 't': movieName_251}
     response_251 = requests.get(baseUrl_251, params=params_251)
 
     if response_251.status_code == 200:
